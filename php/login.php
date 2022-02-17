@@ -5,7 +5,7 @@ require_once __DIR__ . '/repository/Login.php';
 
 $login = new Login($conn, $_POST['user'], $_POST['password']);
 
-if (empty($login->get_user()) && empty($login->get_password())) {
+if (empty($login->get_user()) || empty($login->get_password())) {
     echo "All data is required.";
     return;
 }

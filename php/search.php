@@ -14,4 +14,3 @@
         $output .= 'We did not find what you were looking for.';
     }
     echo $output;
-?>
